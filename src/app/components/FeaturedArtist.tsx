@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { ImHeadphones } from "react-icons/im";
+import GreenButton from './GreenButton';
+import OutlinedButton from './OutlinedButton';
 const FeaturedArtist = () => {
   return (
     <div className="flex flex-row w-full h-72 p-0 bg-mytheme-black">
@@ -17,11 +19,15 @@ const FeaturedArtist = () => {
             <p className="text-white">82,736,050</p>
             <p className="text-mytheme-greyText">monthly listeners</p>
           </div>
+          <div className="flex flex-row gap-2 justify-center items-center">
+            <GreenButton />
+            <OutlinedButton isFollowing={true} />
+          </div>
         </div>
       </div>
       <div className="w-1/2">
         <Image
-          src="/assets/images/ruth2.jpg"
+          src="/assets/images/ruth3.png"
           alt="artiste"
           className="w-full h-full object-cover rounded-md"
           width={300}

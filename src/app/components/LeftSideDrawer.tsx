@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 import Logo from "./Logo"
-const Drawer: React.FC = () => {
+const LeftSideDrawer: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDrawer = () => {
@@ -10,7 +10,7 @@ const Drawer: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="bg-mytheme-darkBackground pt-8">
       <button
         className="block md:hidden text-gray-800 hover:text-gray-600 focus:outline-none"
         onClick={toggleDrawer}
@@ -32,13 +32,12 @@ const Drawer: React.FC = () => {
       </button>
 
       <div
-        className={`fixed inset-y-0 left-0 w-64 bg-gray-900 text-white transition-transform duration-300 transform ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
+        className={` w-64 bg-mytheme-darkBackground text-white '
           }`}
       >
         <div className="p-4 ">
-          <div className="pl-4">
+          <div className="pl-4 ">
             <Logo />
-            {/* <p>This is the left drawer</p> */}
           </div>
         </div>
       </div>
@@ -46,4 +45,4 @@ const Drawer: React.FC = () => {
   );
 };
 
-export default Drawer;
+export default LeftSideDrawer;

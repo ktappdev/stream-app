@@ -2,12 +2,11 @@
 import { SiMusicbrainz } from "react-icons/si";
 const Logo = () => {
   return (
-    <div className=' flex text-lg font-bold justify-left items-center h-10'>
-      <SiMusicbrainz className='text-3xl mr-2' />
-      <div className="flex flex-0 flex-col justify-start">
-        <p className="text-lg justify-start items-start">Musicium</p>
-        <p className="flex justify-end items-start text-xs text-['
-          #C1C1C1'] mt-0">.com</p>
+    <div className=' flex flex-0 text-lg font-bold justify-left items-center h-10 bg-[#212121]'>
+      <SiMusicbrainz className='text-5xl mr-2' />
+      <div className="flex flex-0 flex-col start gap-0 leading-none">
+        <p className="text-lg justify-end items-end leading-none">Musicium</p>
+        <div className="flex flex-col items-end text-xs text-mytheme-greyText leading-none">.com</div>
       </div>
     </div>
   )

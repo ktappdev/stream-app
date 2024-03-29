@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         mytheme: {
           darkBackground: "#212121",
+          darkBackgroundLighter: "#2e2d2d",
           black: "#121212",
           greyText: "#c1c1c1"
         },

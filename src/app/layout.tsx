@@ -20,8 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
-          <div className="flex flex-row flex-1 ">
+        <div className="flex flex-col min-h-screen bg-mytheme-darkBackground">
+          <div className="flex flex-row flex-1 max-w-[1920px] mx-auto">
+
             <LeftSideDrawer />
             <Body />
             {/* <Navbar /> */}

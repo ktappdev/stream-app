@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen bg-mytheme-darkBackground">
-          <div className="flex flex-row flex-1 max-w-[1920px] mx-auto">
+          <div className="flex flex-row flex-1 max-w-[1920px] max-h-[1080px] mx-auto">
 
             <LeftSideDrawer />
             <Body />

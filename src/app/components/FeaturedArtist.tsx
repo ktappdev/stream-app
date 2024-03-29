@@ -14,7 +14,7 @@ const FeaturedArtist = () => {
             <p className='text-mytheme-greyText'>Verified Artist</p>
           </div>
           <p className="text-4xl font-bold text-white">Azariel</p>
-          <div className="flex flex-row gap-2 justify-center items-center">
+          <div className="flex flex-row gap-2 justify-start items-center ">
             <ImHeadphones />
             <p className="text-white">36,050</p>
             <p className="text-mytheme-greyText">monthly listeners</p>
@@ -29,7 +29,7 @@ const FeaturedArtist = () => {
         <Image
           src="/assets/images/az1.png"
           alt="artiste"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover "
           width={300}
           height={300}
         />

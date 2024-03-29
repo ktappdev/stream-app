@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 
 import UserButton from './UserButton';
+import Link from 'next/link';
+import FansAlsoLike from './FansAlsoLike';
 const RightSideDrawer: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +23,10 @@ const RightSideDrawer: React.FC = () => {
           <div className="pl-4 ">
             <UserButton />
           </div>
+          <div className='w-full'>
+            <FansAlsoLike />
+          </div>
+
         </div>
       </div>
     </div>

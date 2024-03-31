@@ -19,9 +19,13 @@ const LeftSideDrawer: React.FC = () => {
           <div className="pl-4 ">
             <Logo />
           </div>
-          <div className='flex flex-row pt-12 pl-4 w-full'>
+          <div className=' pt-12 pl-4 w-full'>
             <LeftSideMenu />
           </div>
+          <div className=' pt-12 pl-4 w-full'>
+            <p className='text-white'>My Library</p>
+          </div>
+
         </div>
       </div>
     </div>

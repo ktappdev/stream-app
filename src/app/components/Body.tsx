@@ -4,6 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import NavigatorComponent from './NavigatorComponent';
 import FeaturedArtist from './FeaturedArtist';
 import ListOfSongsComponent from './ListOfSongsComponent';
+import PlayerControl from './PlayerControl';
 const Body = () => {
   return (
     <div className='flex flex-col flex-1 text-white bg-mytheme-black pt-8 px-6'>
@@ -20,6 +21,9 @@ const Body = () => {
       </div>
       <div className='pt-8'>
         <ListOfSongsComponent />
+      </div>
+      <div className='h-[140px]'>
+        <PlayerControl />
       </div>
     </div>
   )

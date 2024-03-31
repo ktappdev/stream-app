@@ -34,7 +34,7 @@ export const songs: Song[] = [
     liked: true,
   },
   {
-    id: 3,
+    id: 4,
     graphic: "https://picsum.photos/100",
     name: "What These Girls Say",
     plays: 800,
@@ -42,7 +42,7 @@ export const songs: Song[] = [
     liked: true,
   },
   {
-    id: 3,
+    id: 5,
     graphic: "https://picsum.photos/100",
     name: "Dem Dead",
     plays: 450,
@@ -50,7 +50,7 @@ export const songs: Song[] = [
     liked: true,
   },
   {
-    id: 3,
+    id: 6,
     graphic: "https://picsum.photos/100",
     name: "Tint",
     plays: 300,
@@ -58,7 +58,7 @@ export const songs: Song[] = [
     liked: true,
   },
   {
-    id: 3,
+    id: 7,
     graphic: "https://picsum.photos/100",
     name: "Cars",
     plays: 100,

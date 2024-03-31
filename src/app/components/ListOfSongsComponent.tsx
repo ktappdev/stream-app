@@ -1,6 +1,6 @@
 import SongComponentRow from './SongComponentRow';
 import { songs, Song } from '@/app/lib/database';
-import { Table, TableBody, TableHeader } from "@/components/ui/table"
+import { Table, TableBody, TableHeader } from "@/components/ui/table";
 
 const ListOfSongsComponent = () => {
   const getRandomPictureUrl = (baseUrl: string) => {
@@ -8,31 +8,32 @@ const ListOfSongsComponent = () => {
     return `${baseUrl}?random=${randomNumber}`;
   };
 
+  // Show only a fixed number of songs initially
+  const initialSongs = songs.slice(0, 4);
+
+  const scrollableTableStyles: React.CSSProperties = {
+    maxHeight: '300px', // Adjust the height as per your requirement
+    overflowY: 'scroll', // Ensure scrolling even when not necessary
+  };
+
   return (
-    <Table>
-      {/* <TableHeader> */}
-      {/* <tr> */}
-      {/*   <th className="px-4 py-2">Image</th> */}
-      {/*   <th className="px-4 py-2">Name</th> */}
-      {/*   <th className="px-4 py-2">Plays</th> */}
-      {/*   <th className="px-4 py-2">Length</th> */}
-      {/*   <th className="px-4 py-2">Liked</th> */}
-      {/* </tr> */}
-      {/* </TableHeader> */}
-      <TableBody>
-        {songs.map((song: Song) => (
-          <SongComponentRow
-            key={song.id}
-            id={song.id}
-            graphic={getRandomPictureUrl(song.graphic)}
-            name={song.name}
-            plays={song.plays}
-            length={song.length}
-            liked={song.liked}
-          />
-        ))}
-      </TableBody>
-    </Table>
+    <div style={scrollableTableStyles}>
+      <Table>
+        <TableBody>
+          {songs.map((song: Song) => (
+            <SongComponentRow
+              key={song.id}
+              id={song.id}
+              graphic={getRandomPictureUrl(song.graphic)}
+              name={song.name}
+              plays={song.plays}
+              length={song.length}
+              liked={song.liked}
+            />
+          ))}
+        </TableBody>
+      </Table>
+    </div>
   );
 };
 

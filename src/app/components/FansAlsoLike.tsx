@@ -10,7 +10,7 @@ import Image from "next/image"
 import Link from "next/link"
 const FansAlsoLike = () => {
   return (
-    <div className="flex.col justify-center w-full">
+    <div className="flex.col justify-center w-full ">
       <div className='flex flex-row pt-12 w-full justify-between'>
         <p className='text-white font-medium text-base'>Fans also like</p>
         <Link href={'/'} className='font-medium text-base text-mytheme-highlight'>See all</Link>

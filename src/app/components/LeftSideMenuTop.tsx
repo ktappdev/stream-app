@@ -6,9 +6,9 @@ import { FaPodcast } from "react-icons/fa6";
 import Link from "next/link";
 const LeftSideMenu = () => {
   return (
-    <div className="w-full">
+    <div className="w-full text-mytheme-greyText">
       <div className="flex flex-col gap-6 w-full">
-        <Link href="/" className="flex flex-row w-full justify-start items-center text-sm bg-gradient-to-r from-white/5 to-mytheme-darkBackground border-r-2 border-green-500">
+        <Link href="/" className="flex flex-row w-full justify-start items-center text-white text-sm bg-gradient-to-r from-white/5 to-mytheme-darkBackground border-r-2 border-green-500">
           <RiHome5Line className="text-2xl" />
           <div className="flex ml-4">Home</div>
         </Link>

@@ -34,6 +34,7 @@ const RightSideDrawer: React.FC = () => {
         </div>
         <RecentlyPlayed />
         <RecentlyPlayed />
+        <RecentlyPlayed />
       </div>
     </div>
   );

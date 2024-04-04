@@ -10,7 +10,7 @@ const PlayerControl: React.FC<PlayerControlProps> = () => {
   return (
     <div className="fixed bottom-0 left-0 w-full h-20 px-8 shadow-xl bg-gradient-to-r 
       from-mytheme-darkBackground via-mytheme-darkBackgroundLighter to-mytheme-darkBackground 
-      flex items-center justify-around px-4">
+      flex items-center justify-around ">
       <div className="flex items-center justify-start p-8">
 
         <Image

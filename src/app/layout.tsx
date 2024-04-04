@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Atkinson_Hyperlegible, Manrope } from "next/font/google";
 import "./globals.css";
-// import Navbar from './components/Navbar';
 import LeftSideDrawer from './components/LeftSideDrawer';
 import RightSideDrawer from "./components/RightSideDrawer";
 import Body from "./components/Body";
-const inter = Inter({ subsets: ["latin"] });
+const myFont = Manrope({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,13 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={myFont.className}>
         <div className="flex flex-col min-h-screen bg-mytheme-darkBackground">
           <div className="flex flex-row flex-1 max-w-[1920px] max-h-[1080px] mx-auto">
 
             <LeftSideDrawer />
             <Body />
-            {/* <Navbar /> */}
             {/* <main className="flex-1 p-4">{children}</main> */}
             <RightSideDrawer />
           </div>

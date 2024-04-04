@@ -10,7 +10,7 @@ export default function VolumeComponent() {
     <div className="flex items-center justify-end gap-2">
       <p className="text-mytheme-greyText text-sm font-thin ">3:30 / 4:20</p>
       <ImVolumeHigh />
-      <Progress value={70} className="w-36" />
+      <Progress value={70} className="w-36 h-1" />
     </div>
 
   )

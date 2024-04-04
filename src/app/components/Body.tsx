@@ -7,7 +7,7 @@ import ListOfSongsComponent from './ListOfSongsComponent';
 import PlayerControl from './PlayerControl';
 const Body = () => {
   return (
-    <div className='flex flex-col flex-1 text-white bg-mytheme-black pt-8 px-6'>
+    <div className='flex flex-col flex-0 text-white bg-mytheme-black pt-8 px-6'>
       {/* NOTE: this is thew top div */}
       <div className='flex flex-row w-full h-16 bg-mytheme-black justify-between items-center '>
         <div className='p-4 bg-mytheme-darkBackground h-[50px] w-[50px]'>
@@ -19,7 +19,7 @@ const Body = () => {
       <div className='pt-8'>
         <FeaturedArtist />
       </div>
-      <div className='pt-8'>
+      <div className='pt-8 '>
         <ListOfSongsComponent />
       </div>
       <div className='h-[140px]'>

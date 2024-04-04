@@ -5,8 +5,9 @@ import { ImHeadphones } from "react-icons/im";
 import GreenButton from './GreenButton';
 import OutlinedButton from './OutlinedButton';
 const FeaturedArtist = () => {
+  //NOTE:main div height was h-72
   return (
-    <div className="flex flex-row w-full h-72 p-0 bg-gradient-to-b from-transparent to-red-500/50">
+    <div className="flex flex-row w-full p-0 bg-gradient-to-b from-transparent to-red-500/50">
       <div className="flex flex-col items-start justify-center w-1/2 ">
         <div className="flex flex-col gap-4 pl-8">
           <div className='flex flex-row gap-2'>
